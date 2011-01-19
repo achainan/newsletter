@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head><title>Subscribe to our Mailing List</title></head>
+  <body>
+    <h2>Subscribe to our Mailing List</h2>
+    <div style="color: red"><%= h(@error) %></div>
+    <div style="color: green"><%= h(@success) %></div>
+    
+    <% form_tag :action => "create" do %>
+      <input type="text" name="email" size="25" />
+      <input type="submit" />
+    <% end %>
+  </body>
+</html>
